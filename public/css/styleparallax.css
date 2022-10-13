@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    height: 100%;
+    /* font-family: Open Sans; */
+}
+
+/* sticky footer (html and body); */
+/* html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+} */
+
+/* header */
+/* header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 9997;
+    overflow-y: auto;
+} */
+
+/* nav {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    top: 0;
+} */
+
+/* parallax */
+/* .hero {
+    width: 100%;
+    height: 100%;
+} */
+
+.parallax {
+    position: relative;
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../img/sun.gif");
+}
+
+.caption {
+    position: absolute;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    /* background-color: #ddd; */
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 60px;
+}
+
+
+.caption h1 {
+    font-size: 60px;
+}
+
+.caption p {
+    font-size: 30px;
+}
+
+.main {
+    background-color: rgb(66, 66, 214);
+}
+
+/* 
+.banner-image {
+    background-image: url('/assets/img/first.jpg')
+} */
+
+/*block section*/
+
+/* .block { 
+    position: relative;
+    height: 100%;
+    background-color: rgb(142, 0, 116);
+    color: white;
+}
+
+.textinblock {
+    position: absolute;
+    text-align: center;
+    color: #ddd;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 36px;
+} */
+
+/* introduction (hero) */
+
+
+/* about */
+
+/*footer*/
+
+/* .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background-color: #d4d4d4;
+} */
