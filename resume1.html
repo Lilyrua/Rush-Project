@@ -1,39 +1,546 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>First Resume</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+    <link href="public/img/favicon.png" rel="icon" />
+    <link href="public/img/apple-touch-icon.png" rel="apple-touch-icon" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+    <link href="public/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="public/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="public/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="public/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link
+      href="public/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="public/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <link href="public/css/resume1.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css"
+    />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>patantiw</title>
-    <link rel="stylesheet" href="./public/css/tailwind.css">
-    <link rel="stylesheet" href="../pakornds.github.io//src/aos/aos.css">
-    <script src="../pakornds.github.io/src/aos/aos.js"></script>
-    <style type="text/tailwindcss">
-        @layer utilities {
-      .content-auto {
-        content-visibility: auto;
-      }
-    }
-    </style>
-</head>
+  <body>
+    <nav
+      id="navbar"
+      class="sticky top-0 z-10 rounded bg-sky-900 px-2 py-2 dark:bg-gray-900 sm:px-4"
+    >
+      <div
+        class="container mx-auto flex flex-wrap items-center justify-between"
+      >
+        <a href="index.html" class="flex items-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="h-6 w-6 text-white hover:opacity-80"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+            />
+          </svg>
+        </a>
+        <button
+          data-collapse-toggle="navbar-default"
+          type="button"
+          class="ml-3 inline-flex items-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:hidden"
+          aria-controls="navbar-default"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="h-6 w-6"
+            aria-hidden="true"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+          <ul
+            class="flex flex-col p-4 md:mt-0 md:flex-row md:space-x-8 md:border-0 md:text-sm md:font-medium"
+          >
+            <li>
+              <a
+                href="#"
+                class="nav-link block rounded py-2 pr-4 pl-3 text-lg text-white hover:opacity-80 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-white"
+                >Introduction</a
+              >
+            </li>
+            <li>
+              <a
+                href="#about"
+                class="block rounded py-2 pr-4 pl-3 text-lg text-white hover:opacity-80 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-white"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="#resume"
+                class="block rounded py-2 pr-4 pl-3 text-lg text-white hover:opacity-80 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-white"
+                >Resume</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contact"
+                class="block rounded py-2 pr-4 pl-3 text-lg text-white hover:opacity-80 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-white"
+                >Contact</a
+              >
+            </li>
+            <li>
+              <a
+                href="resume2.html"
+                class="block rounded py-2 pr-4 pl-3 text-lg text-white hover:opacity-80 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-white"
+                >tsuksamr</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-<body>
-    <h1 class="text-3xl font-bold underline">
-        Hello world!
-    </h1>
-    <form action="https://formspree.io/f/xrgjnday" method="POST">
-        <input type="email" name="email" class="form-control" placeholder="Email">
-        <div class="mt-3">
-            <input class="form-control" type="subject" name="subject" placeholder="Subject">
-        </div>
-        <div class="form-group mt-3">
-            <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-        </div>
-        <div class="text-center mt-3">
-            <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
-        </div>
-    </form>
-</body>
+    <section id="home" class="flex flex-col justify-center">
+      <div class="container" data-aos="zoom-in" data-aos-delay="100">
+        <h1>Resume 1</h1>
+        <p>
+          Name:
+          <span class="typed" data-typed-items="Pakorn Tantiwutthiphat"></span>
+        </p>
 
+        <div>
+          <img
+            style="border-radius: 15px"
+            class="img-fluid"
+            src="https://i.kfs.io/album/global/160289973,0v1/fit/500x500.jpg"
+            alt="Bing Chiling"
+          />
+        </div>
+        <div class="social-links">
+          <a
+            href="https://www.facebook.com/prite.pakorn"
+            class="facebook"
+            target="_blank"
+            ><i class="bx bxl-facebook text-4xl"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/prite_.to/"
+            class="instagram"
+            target="_blank"
+            ><i class="bx bxl-instagram text-4xl"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/pakorn-tantiwutthiphat-66a6b7246/"
+            class="linkedin"
+            target="_blank"
+            ><i class="bx bxl-linkedin text-4xl"></i
+          ></a>
+          <a
+            href="https://www.youtube.com/watch?v=OoQLoKHhohg"
+            class="discord"
+            target="_blank"
+            ><i class="bx bxl-discord text-4xl"></i
+          ></a>
+        </div>
+      </div>
+      <div class="box">
+        <div class="wave -one"></div>
+        <div class="wave -two"></div>
+        <div class="wave -three"></div>
+      </div>
+    </section>
+
+    <main id="main">
+      <section id="about" class="about">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>About</h2>
+            <p>
+              Hello, my name is Pakorn Tantiwutthiphat, and I hope that this
+              resume accurately represents my skills and career.
+            </p>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-4">
+              <img
+                style="border-radius: 15px"
+                src="public/img/profile-img.jpg"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+            <div class="col-lg-8 pt-lg-0 content pt-4">
+              <h3>High School Student</h3>
+              <p class="fst-italic mb-4">
+                This is my senior year of high school, and I'm hoping to get
+                into my dream university.
+              </p>
+              <div class="row">
+                <div class="col-lg-6">
+                  <ul>
+                    <li>
+                      <i class="bi bi-chevron-right"></i>
+                      <strong>Birthday:</strong> <span>XX XXX 2005</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-chevron-right"></i>
+                      <strong>Phone:</strong> <span>064 xxx xxxx</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-chevron-right"></i> <strong>City:</strong>
+                      <span>Samutprakarn, Thailand</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-6">
+                  <ul>
+                    <li>
+                      <i class="bi bi-chevron-right"></i> <strong>Age:</strong>
+                      <span>17</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-chevron-right"></i>
+                      <strong>Email:</strong>
+                      <span>pakorn.tantiwutthiphat@gmail.com</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="resume" class="resume">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Resume</h2>
+            <p>
+              This will show what I have done and what my experience looks like.
+            </p>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6">
+              <h3 class="resume-title">Summary</h3>
+              <div class="resume-item pb-0">
+                <h4>Pakorn Tantiwutthiphat</h4>
+                <p>
+                  <em
+                    >I am a 12th grade high school student who wants to design
+                    and build a fantastic website.</em
+                  >
+                </p>
+                <ul>
+                  <li>Samutprakarn, Thailand</li>
+                  <li>064 xxx xxxx</li>
+                  <li>pakorn.tantiwutthiphat@gmail.com</li>
+                </ul>
+              </div>
+
+              <h3 class="resume-title">Education</h3>
+              <div class="resume-item">
+                <h4>
+                  Major in Science-Mathematics(Faculty of Robotics and AI)
+                </h4>
+                <h5>2020-present</h5>
+                <p>
+                  <em
+                    >Assumption College Samutprakarn, Samutprakarn, Thailand</em
+                  >
+                </p>
+                <p>
+                  I wanted to write a website, but I saw this as a great
+                  opportunity, so I chose to major in Robotics and AI, but I
+                  still write and create websites on the side.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <h3 class="resume-title">Professional Experience</h3>
+              <div class="resume-item">
+                <h4>CSCamp 13</h4>
+                <h5>2021</h5>
+                <p><em>Online Learning</em></p>
+                <ul>
+                  <li>Learn how to use Micro:bit</li>
+                  <li>
+                    Learn the basics of coding by making a code using block
+                    codes
+                  </li>
+                  <li>
+                    The final day project makes me use the knowledge that I have
+                    learned and combine it to help with the health aspect of
+                    human beings.
+                  </li>
+                </ul>
+              </div>
+              <div class="resume-item">
+                <h4>ITCAMP 18</h4>
+                <h5>2022</h5>
+                <p><em>Onsite Learning and Activities</em></p>
+                <ul>
+                  <li>Learn the basics of HTML, CSS, and Js</li>
+                  <li>Be introduced to Vue, Vuetify, Firebase, Node.js</li>
+                  <li>
+                    Final Project makes extensive use of database management and
+                    outside-of-class knowledge
+                  </li>
+                  <li>
+                    The final project of the camp provides the opportunity to
+                    present in the auditorium
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section id="skills" class="skills section-bg">
+          <div class="container" data-aos="fade-up">
+            <div class="section-title">
+              <h2>Skills</h2>
+              <p>This will give a rough idea of my skill level.</p>
+            </div>
+
+            <div class="row skills-content">
+              <div class="col-lg-6">
+                <div class="progress">
+                  <span class="skill">HTML <i class="val">85%</i></span>
+                  <div class="progress-bar-wrap">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      aria-valuenow="85"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                </div>
+
+                <div class="progress">
+                  <span class="skill">CSS <i class="val">75%</i></span>
+                  <div class="progress-bar-wrap">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      aria-valuenow="75"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                </div>
+
+                <div class="progress">
+                  <span class="skill">JavaScript <i class="val">69%</i></span>
+                  <div class="progress-bar-wrap">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      aria-valuenow="69"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6">
+                <div class="progress">
+                  <span class="skill">C <i class="val">40%</i></span>
+                  <div class="progress-bar-wrap">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      aria-valuenow="40"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                </div>
+
+                <div class="progress">
+                  <span class="skill">Vue <i class="val">70%</i></span>
+                  <div class="progress-bar-wrap">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      aria-valuenow="70"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                </div>
+
+                <div class="progress">
+                  <span class="skill">Firebase <i class="val">65%</i></span>
+                  <div class="progress-bar-wrap">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      aria-valuenow="65"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+      <section id="contact" class="contact">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Contact</h2>
+          </div>
+
+          <div class="row mt-1">
+            <div class="col-lg-4">
+              <div class="info">
+                <div class="address">
+                  <i class="bi bi-geo-alt"></i>
+                  <h4>Location:</h4>
+                  <p>XXX, Samutprakarn, Thailand 10270</p>
+                </div>
+
+                <div class="email">
+                  <i class="bi bi-envelope"></i>
+                  <h4>Email:</h4>
+                  <p>pakorn.tantiwutthiphat@gmail.com</p>
+                </div>
+
+                <div class="phone">
+                  <i class="bi bi-phone"></i>
+                  <h4>Call:</h4>
+                  <p>064 xxx xxxx</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-8 mt-lg-0 mt-5">
+              <form action="https://formspree.io/f/xrgjnday" method="POST">
+                <input
+                  type="email"
+                  name="email"
+                  class="form-control"
+                  placeholder="Email"
+                />
+                <div class="mt-3">
+                  <input
+                    class="form-control"
+                    type="subject"
+                    name="subject"
+                    placeholder="Subject"
+                  />
+                </div>
+                <div class="form-group mt-3">
+                  <textarea
+                    class="form-control"
+                    name="message"
+                    rows="5"
+                    placeholder="Message"
+                    required
+                  ></textarea>
+                </div>
+                <div class="rounded-md shadow">
+                  <a
+                    href="#"
+                    class="mt-2 flex w-full items-center justify-center rounded-md border border-transparent bg-sky-700 px-8 py-3 text-base font-medium text-white hover:bg-sky-900 md:py-4 md:px-10 md:text-lg"
+                    >Send message</a
+                  >
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer">
+      <div class="container">
+        <h3>Pakorn Tantiwutthiphat</h3>
+        <p>We do be gamin</p>
+        <div class="social-links">
+          <a
+            href="https://www.facebook.com/prite.pakorn"
+            class="facebook"
+            target="_blank"
+            ><i class="bx bxl-facebook"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/prite_.to/"
+            class="instagram"
+            target="_blank"
+            ><i class="bx bxl-instagram"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/pakorn-tantiwutthiphat-66a6b7246/"
+            class="linkedin"
+            target="_blank"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+          <a
+            href="https://www.youtube.com/watch?v=OoQLoKHhohg"
+            class="discord"
+            target="_blank"
+            ><i class="bx bxl-discord"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top flex items-center justify-center"
+      ><i>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="h-6 w-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M12 19.5v-15m0 0l-6.75 6.75M12 4.5l6.75 6.75"
+          />
+        </svg> </i
+    ></a>
+    <script src="public/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="public/vendor/aos/aos.js"></script>
+    <script src="public/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="public/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="public/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="public/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="public/vendor/typed.js/typed.min.js"></script>
+    <script src="public/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="public/js/main.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+  </body>
 </html>
