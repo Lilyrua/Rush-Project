@@ -1,17 +1,4 @@
 (function () {
-  /**
-       author: @manufosela
-       2013/08/27    copyleft 2013
-  
-       ShootingStar class Main Methods:
-       launch: launch shooting stars every N seconds received by              param. 10 seconds by default.
-        launchStar: launch a shooting star. Received options                  object by param with:
-                 - dir (direction between 0 and 1)
-                 - life (between 100 and 400)
-                 - beamSize (between 400 and 700)
-                 - velocity (between 2 and 10)
-    **/
-
   ShootingStar = function (id) {
     this.n = 0;
     this.m = 0;
@@ -144,7 +131,7 @@
     var self = this;
     setInterval(function () {
       var options = {
-        dir: self.getRandom(4, 1) ? 1 : -1,
+        dir: self.getRandom(1, 0) ? 1 : -1,
         life: self.getRandom(400, 100),
         beamSize: self.getRandom(700, 400),
         velocity: self.getRandom(10, 4),
@@ -155,6 +142,6 @@
 })();
 
 $(document).ready(function () {
-  let shootingStarObj = new ShootingStar("body");
+  var shootingStarObj = new ShootingStar("body");
   shootingStarObj.launch();
 });
