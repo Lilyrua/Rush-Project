@@ -146,8 +146,8 @@
       var options = {
         dir: self.getRandom(4, 1) ? 1 : -1,
         life: self.getRandom(400, 100),
-        beamSize: self.getRandom(1500, 600),
-        velocity: self.getRandom(15, 6),
+        beamSize: self.getRandom(700, 400),
+        velocity: self.getRandom(10, 4),
       };
       self.launchStar(options);
     }, everyTime);
