@@ -259,3 +259,11 @@ const slide = () => {
 const out = () => {
   document.getElementById("slide").style.display = "none";
 };
+
+function popup() {
+  let name = prompt("Enter your intra username...");
+  if (name === "tliangso") {
+  } else if (name != null) {
+    alert("Hello! " + name + "welcome to our webpage!");
+  }
+}
