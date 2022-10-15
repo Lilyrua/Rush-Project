@@ -25,7 +25,7 @@
     <link href="public/css/style.css" rel="stylesheet" />
     <link rel="stylesheet" href="./public/css/background.css" />
     <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
-    <link rel="stylesheet" href="./public/css/menu.css">
+    <link rel="stylesheet" href="./public/css/menu.css" />
   </head>
 
   <body>
@@ -36,10 +36,7 @@
       </div>
     </div>
 
-    <section
-      id="menu"
-      class="flex flex-auto flex-row items-center justify-center"
-    >
+    <section id="menu" class="flex flex-row items-center justify-center">
       <div
         class="mt-5 flex flex-col md:mt-2"
         data-aos="zoom-in"
@@ -48,43 +45,49 @@
         <h1 class="flex justify-center text-6xl font-extrabold text-white">
           Rush 42BKK
         </h1>
-        <p class="flex justify-center text-3xl text-white">
-          Member:
-          <span class="typed" data-typed-items="patantiw, tsuksamr"></span>
-        </p>
-        <button class="btnn" onclick=""></button>
+        <div class="mt-3">
+          <p class="flex justify-center text-3xl text-white">
+            Member:
+            <span class="typed" data-typed-items="patantiw, tsuksamr"></span>
+          </p>
+        </div>
+
+        <div class="mt-3 rounded-md shadow">
+          <a
+            onclick="slide()"
+            class="flex w-full cursor-pointer items-center justify-center rounded-md border border-transparent bg-indigo-600 py-2 text-base font-medium text-white hover:bg-indigo-700 md:py-4 md:px-10 md:text-lg"
+            >Click me!</a
+          >
+        </div>
       </div>
     </section>
-
-    <div class="bg" id="slide" data-aos="fade-down" data-aos-easing="ease-in-back" data-aos-delay="500">
+    <div style="display: none" class="bg" id="slide">
       <div class="menu">
         <div class="header">
-          <span>
-            MENU UI RESUME
-          </span>
-          <div class="close-button">
-            ✕
+          <span> MENU UI RESUME </span>
+          <div onclick="out()" class="close-button cursor-pointer">✕</div>
+        </div>
+
+        <div class="content">
+          <div class="category">
+            <a href="resume1.html">Resume1</a>
+          </div>
+          <div class="category2">
+            <a href="resume2.html">Resume2</a>
           </div>
         </div>
-  
-        <div class="content">
-           <div class="category">
-            <a href="resume1.html">Resume1</a>
-           </div>
-           <div class="category2">
-            <a href="resume2.html">Resume2</a>
-           </div>
-           </div>  
-            <div class="list">                      
-              <div class="list-grid">
-                <a href="resume2.html">JAVA1</a>
-                <a href="resume2.html">JAVA2</a>
-                <a href="resume2.html">JAVA3</a>
-                <a href="resume2.html">JAVA4</a>
-                <a href="resume2.html">JAVA5</a>
-                <a href="resume2.html">JAVA6</a>
-              </div>
+        <div class="list">
+          <div class="list-grid">
+            <a href="resume2.html">JAVA1</a>
+            <a href="resume2.html">JAVA2</a>
+            <a href="resume2.html">JAVA3</a>
+            <a href="resume2.html">JAVA4</a>
+            <a href="resume2.html">JAVA5</a>
+            <a href="resume2.html">JAVA6</a>
           </div>
+        </div>
+      </div>
+    </div>
   </body>
   <script src="public/vendor/aos/aos.js"></script>
   <script src="public/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
