@@ -32,6 +32,7 @@
       rel="stylesheet"
       href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css"
     />
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
   </head>
 
   <body>
@@ -175,8 +176,8 @@
     </section>
 
     <main id="main">
-      <section id="about" class="about mt-6">
-        <div class="container" data-aos="fade-up">
+      <section id="about" class="mt-4">
+        <div class="container divide-y" data-aos="fade-up">
           <div class="section-title">
             <h2>About</h2>
             <p>
@@ -185,45 +186,45 @@
             </p>
           </div>
 
-          <div class="row">
-            <div class="col-lg-4">
+          <div class="flex flex-col lg:flex-row">
+            <div
+              class="mt-4 lg:col-start-1 lg:col-end-3 lg:mr-10 lg:mt-4 lg:w-2/6"
+            >
               <img
-                style="border-radius: 15px"
+                style="border-radius: 100px"
                 src="public/img/profile-img.jpg"
-                class="img-fluid"
-                alt=""
               />
             </div>
-            <div class="col-lg-8 pt-lg-0 content pt-4">
-              <h3>High School Student</h3>
-              <p class="fst-italic mb-4">
+            <div class="mt-2 pt-4 lg:col-span-4 lg:col-end-7 lg:pt-0">
+              <h2 class="text-bold">High School Student</h2>
+              <p class="text-bold mb-4 italic">
                 This is my senior year of high school, and I'm hoping to get
                 into my dream university.
               </p>
-              <div class="row">
-                <div class="col-lg-6">
+              <div class="flex flex-col lg:flex-row">
+                <div class="lg:col-span-6">
                   <ul>
-                    <li>
+                    <li class="mb-2 lg:mb-4">
                       <i class="bi bi-chevron-right"></i>
                       <strong>Birthday:</strong> <span>XX XXX 2005</span>
                     </li>
-                    <li>
+                    <li class="mb-2 lg:mb-4">
                       <i class="bi bi-chevron-right"></i>
                       <strong>Phone:</strong> <span>064 xxx xxxx</span>
                     </li>
-                    <li>
+                    <li class="mb-2 lg:mb-4">
                       <i class="bi bi-chevron-right"></i> <strong>City:</strong>
                       <span>Samutprakarn, Thailand</span>
                     </li>
                   </ul>
                 </div>
-                <div class="col-lg-6">
+                <div class="lg:col-span-6 lg:ml-12">
                   <ul>
-                    <li>
+                    <li class="mb-2 lg:mb-4">
                       <i class="bi bi-chevron-right"></i> <strong>Age:</strong>
                       <span>17</span>
                     </li>
-                    <li>
+                    <li class="mb-2 lg:mb-4">
                       <i class="bi bi-chevron-right"></i>
                       <strong>Email:</strong>
                       <span>pakorn.tantiwutthiphat@gmail.com</span>
