@@ -265,6 +265,6 @@ function popup() {
   if (name === "tliangso") {
     alert("Please don't hurt me tliangso");
   } else if (name != null) {
-    alert("Hello! " + name + "welcome to our webpage!");
+    alert("Hello! " + name + " welcome to our webpage!");
   }
 }
