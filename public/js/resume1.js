@@ -145,10 +145,3 @@ $(document).ready(function () {
   var shootingStarObj = new ShootingStar("body");
   shootingStarObj.launch();
 });
-
-const popup = () => {
-  let xmlhttp = new XMLHttpRequest();
-  xmlhttp.open("GET", href, false);
-  xmlhttp.send();
-  return xmlhttp.responseText;
-};

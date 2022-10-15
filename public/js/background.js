@@ -1,3 +1,4 @@
+//shooting stars
 const area = document.querySelector(".galaxy");
 
 let amountMeteor = 15;
