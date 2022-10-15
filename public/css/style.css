@@ -11,7 +11,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #aecfef;
- 
+
   height: 100vh;
 }
 
@@ -281,4 +281,9 @@ h6 {
   .res2 {
     margin-left: 20px;
   }
+}
+
+.menuBtn {
+  margin-left: 45%;
+  margin-right: 45%;
 }

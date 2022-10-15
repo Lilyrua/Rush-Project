@@ -267,3 +267,11 @@
     });
   });
 })();
+
+const slide = () => {
+  document.getElementById("slide").style.display = "block";
+};
+
+const out = () => {
+  document.getElementById("slide").style.display = "none";
+};

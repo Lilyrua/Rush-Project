@@ -25,11 +25,6 @@ ui {
   color: white;
 }
 
-body {
-  background-image: url("../images/Screenshot_22.jpg");
-  overflow: hidden;
-}
-
 .drop-shadow {
   -webkit-filter: drop-shadow(5px 5px 5px #222);
   filter: drop-shadow(5px 5px 5px #222);
@@ -382,7 +377,6 @@ select {
 
 .flex {
   display: flex;
-  width: 100%;
 }
 
 .flex .column {
@@ -471,42 +465,4 @@ select {
 
 .hover-scale:hover {
   transform: scale(1.1);
-}
-
-@media screen and (max-width: 1450px) {
-  #menu {
-    width: 60%;
-  }
-
-  #menu2 {
-    width: 60%;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  #spawn-menu {
-    width: 35%;
-  }
-
-  #menu {
-    width: 70%;
-  }
-
-  #menu2 {
-    width: 70%;
-  }
-}
-
-@media screen and (max-width: 850px) {
-  #spawn-menu {
-    width: 45%;
-  }
-
-  #menu {
-    width: 90%;
-  }
-
-  #menu2 {
-    width: 90%;
-  }
 }
