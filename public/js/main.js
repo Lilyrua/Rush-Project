@@ -263,15 +263,7 @@ const out = () => {
 function popup() {
   let name = prompt("Enter your intra username...");
   if (name === "tliangso") {
-    function show_image(src, width, height, alt) {
-      var img = document.createElement("img");
-      img.src = src;
-      img.width = width;
-      img.height = height;
-      img.alt = alt;
-
-      document.body.appendChild(img);
-    }
+    alert("Please don't hurt me tliangso");
   } else if (name != null) {
     alert("Hello! " + name + "welcome to our webpage!");
   }
