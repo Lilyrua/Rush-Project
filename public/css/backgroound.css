@@ -1,0 +1,23 @@
+body {
+    background-color:white;
+    height: 100vh;
+}
+.navbar ul a li{
+
+    color:rgb(255, 255, 255);
+    font-family: 'Oswald', sans-serif;
+    display: inline;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.navbar{
+    background-color: black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 0;
+   
+}
+.navbar a{
+
+    text-decoration: none;
+}
