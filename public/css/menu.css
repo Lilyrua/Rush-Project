@@ -25,11 +25,6 @@ ui {
   color: white;
 }
 
-body {
-  background-image: url("../images/Screenshot_22.jpg");
-  overflow: hidden;
-}
-
 .drop-shadow {
   -webkit-filter: drop-shadow(5px 5px 5px #222);
   filter: drop-shadow(5px 5px 5px #222);

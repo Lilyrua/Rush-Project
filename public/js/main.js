@@ -275,11 +275,3 @@ const slide = () => {
 const out = () => {
   document.getElementById("slide").style.display = "none";
 };
-
-element.addEventListener("click", (e) => {
-  fadeTo(element, 0.25, 1000);
-
-  setTimeout(() => {
-    fadeTo(element, 1.0, 500);
-  }, 1000);
-});
