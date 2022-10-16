@@ -262,9 +262,23 @@ const out = () => {
 
 function popup() {
   let name = prompt("Enter your intra username...");
-  if (name === "tliangso") {
-    alert("Pwease don't huwt me tliangso UwU");
-  } else if (name != null) {
-    alert("Hello! " + name + " welcome to our webpage!");
+  let long = name.length;
+  if (name != null) {
+    if (long > 8 || long < 8) {
+      alert("Please enter valid intra name, thank you!");
+      location.reload();
+    } else if (name === "") {
+      alert("Please enter your intra name, thank you!");
+      location.reload();
+    } else if (name === "tliangso") {
+      alert("Pwease don't huwt me Mr.tliangso UwU.");
+    } else if (name === "thliangs") {
+      alert("Pwease don't huwt me Mr.thliangs UwU.");
+    } else {
+      alert("Hello! Mr." + name + " welcome to our webpage!");
+    }
+  } else {
+    alert("Please enter valid intra name, thank you!");
+    location.reload();
   }
 }
