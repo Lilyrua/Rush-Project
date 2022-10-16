@@ -69,74 +69,80 @@
     </div>
   </nav>
   <div class="content" style="border: 3px solid black; padding: 50px">
-    <form id="valuecal">
+    <form id="inp">
       <div>
-        <input type="text" name="ftext" />
+        <input type="text" name="atext">
       </div>
       <div>
-        <input type="text" name="stext" />
+        <input type="text" name="btext">
       </div>
-      <select name="symbol">
-        <option value="+">+</option>
-        <option value="-">-</option>
-        <option value="*">*</option>
-        <option value="/">/</option>
-        <option value="%">%</option>
+      <select name="opchoice">
+        <option value="Plus">+</option>
+        <option value="Minus">-</option>
+        <option value="Multiply">x</option>
+        <option value="Divide">/</option>
+        <option value="Modulo">%</option>
       </select>
       <div>
-        <button name="calcu" type="submit">Try me!</button>
+        <button name="subbtn" type="submit">Try me!</button>
       </div>
     </form>
   </div>
   <script>
-    let inp = document.getElementById("valuecal");
-    let {
-      elements: { ftext, stext, symbol, calcu },
-    } = valuecal;
-
-    let correDiv = function (num2) {
-      if (num2 === 0) alert("it's over 9000!");
-    };
-
-    let correCalc = function (num1, num2) {
-      if (num1 < 0 || num2 < 0) alert("Error :(");
-      else if (isNaN(num1) || isNaN(num2)) {
-        alert("Error :(");
+    const inp = document.getElementById('inp')
+    const {
+      elements: {
+        atext,
+        btext,
+        opchoice,
+        subbtn
       }
-    };
+    } = inp
 
-    let calc = function (num1, num2, sym) {
-      correCalc(num1, num2);
-      switch (sym) {
-        case "+":
-          return num1 + num2;
-        case "-":
-          return num1 - num2;
-        case "*":
-          return num1 * num2;
-        case "/":
-          correDiv(num2);
-          return num1 / num2;
-        case "%":
-          correDiv(num2);
-          return num1 % num2;
-      }
-    };
-
-    let control = function (v) {
-      v.preventDefault();
-      let num1 = parseInt(ftext.value);
-      let num2 = parseInt(stext.value);
+    const handle = (e) => {
+      e.preventDefault()
+      const a = parseInt(atext.value)
+      const b = parseInt(btext.value)
       try {
-        let r = calc(num1, num2, symbol.value);
-        console.log(r);
-        alert(r);
+        const c = calc(a, b, opchoice.value)
+        console.log(c)
+        alert(c)
       } catch (error) {
-        console.log(error);
-        alert(error);
+        console.log(error)
+        alert(error)
       }
-    };
-    inp.addEventListener("submit", control);
+    }
+
+    const validCalc = (a, b) => {
+      if (a < 0 || b < 0)
+        throw 'Error :('
+      else if (isNaN(a) || isNaN(b)) {
+        throw 'Error :('
+      }
+    }
+    const validDiv = (b) => {
+      if (b === 0)
+        throw "it's over 9000"
+    }
+
+    const calc = (a, b, op) => {
+      validCalc(a, b)
+      switch (op) {
+        case 'Plus':
+          return a + b
+        case 'Minus':
+          return a - b
+        case 'Multiply':
+          return a * b
+        case 'Divide':
+          validDiv(b)
+          return a / b
+        case 'Modulo':
+          validDiv(b)
+          return a % b
+      }
+    }
+    inp.addEventListener('submit', handle)
   </script>
 </body>
 <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
