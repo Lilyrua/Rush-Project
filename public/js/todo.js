@@ -17,8 +17,6 @@ function popup() {
     const x = createToDo(task);
     myNodelist.prepend(x);
     st();
-  } else if (task == null) {
-    location.reload();
   }
 }
 
@@ -34,7 +32,7 @@ function st() {
 }
 
 const { Tasks } = document.cookie.split(";").reduce(function (acc, pair) {
-  const [key, ...vals] = pair.split("=");
+  const [key, ...vals] = pair.trimStart().split("=");
   const val = vals.join("=");
   acc[key] = decodeURIComponent(val);
   return acc;
