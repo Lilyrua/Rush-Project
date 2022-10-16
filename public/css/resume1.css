@@ -312,58 +312,6 @@ section {
 #footer .credits {
   font-size: 13px;
 }
-@-webkit-keyframes anim {
-  0% {
-    -webkit-transform: scale(0, 0) rotateZ(-90deg);
-    transform: scale(0, 0) rotateZ(-90deg);
-    opacity: 0;
-  }
-
-  30% {
-    -webkit-transform: scale(1, 1) rotateZ(0deg);
-    transform: scale(1, 1) rotateZ(0deg);
-    opacity: 1;
-  }
-
-  50% {
-    -webkit-transform: scale(1, 1) rotateZ(0deg);
-    transform: scale(1, 1) rotateZ(0deg);
-    opacity: 1;
-  }
-
-  80% {
-    -webkit-transform: scale(0, 0) rotateZ(90deg);
-    transform: scale(0, 0) rotateZ(90deg);
-    opacity: 0;
-  }
-}
-
-@keyframes anim {
-  0% {
-    -webkit-transform: scale(0, 0) rotateZ(-90deg);
-    transform: scale(0, 0) rotateZ(-90deg);
-    opacity: 0;
-  }
-
-  30% {
-    -webkit-transform: scale(1, 1) rotateZ(0deg);
-    transform: scale(1, 1) rotateZ(0deg);
-    opacity: 1;
-  }
-
-  50% {
-    -webkit-transform: scale(1, 1) rotateZ(0deg);
-    transform: scale(1, 1) rotateZ(0deg);
-    opacity: 1;
-  }
-
-  80% {
-    -webkit-transform: scale(0, 0) rotateZ(90deg);
-    transform: scale(0, 0) rotateZ(90deg);
-    opacity: 0;
-  }
-}
-
 @import url("https://fonts.googleapis.com/css?family=Exo:400,700");
 
 * {
