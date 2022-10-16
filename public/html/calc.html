@@ -5,14 +5,30 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/public/css/style.css" />
   <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
-  <title>Background</title>
+  <title>Calculator</title>
+  <style>
+    .content {
+      width: fit-content;
+      margin: 0 auto;
+      margin-top: 50px;
+      background-color: antiquewhite;
+    }
+
+    body {
+      color: black;
+      background-image: url("../img/sun.gif");
+      background-size: cover;
+
+    }
+  </style>
 </head>
 
 <body>
   <nav id="navbar" class="sticky top-0 z-10 rounded" data-aos="fade-down">
     <div class="container mx-auto flex flex-wrap items-center justify-between">
-      <a href="index.html" class="flex items-center">
+      <a href="../../index.html" class="flex items-center">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
           class="h-6 w-6 text-white hover:opacity-80">
           <path stroke-linecap="round" stroke-linejoin="round"
@@ -20,7 +36,7 @@
         </svg>
       </a>
       <button data-collapse-toggle="navbar-default" type="button"
-        class="ml-3 inline-flex items-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:hidden"
+        class="ml-3 inline-flex items-center rounded-lg p-2 text-sm text-gray-50 hover:bg-sky-600 md:dark:hover:bg-transparent focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:hidden"
         aria-controls="navbar-default" aria-expanded="false">
         <span class="sr-only">Open main menu</span>
         <svg class="h-6 w-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
@@ -33,8 +49,8 @@
       <div class="hidden w-full md:block md:w-auto" id="navbar-default">
         <ul class="flex flex-col p-4 md:mt-0 md:flex-row md:space-x-8 md:border-0 md:text-sm md:font-medium">
           <li>
-            <a href="./calc.html"
-              class="block rounded py-2 pr-4 pl-3 text-lg text-white hover:opacity-80 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-white">Calculator</a>
+            <a href="./backgroound.html"
+              class="block rounded py-2 pr-4 pl-3 text-lg text-white hover:opacity-80 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-white">RandBg</a>
           </li>
           <li>
             <a href="./balloon.html"
@@ -52,23 +68,75 @@
       </div>
     </div>
   </nav>
-  <button class=" flex w-full cursor-pointer items-center justify-center rounded-md border border-transparent
-    bg-indigo-600 py-2 text-base font-medium text-white hover:bg-indigo-700 md:py-4 md:px-10 md:text-lg"
-    onclick="random_bg_color()">Click me!</button>
-
+  <div class="content" style="border: 3px solid black; padding: 50px">
+    <form id="valuecal">
+      <div>
+        <input type="text" name="ftext" />
+      </div>
+      <div>
+        <input type="text" name="stext" />
+      </div>
+      <select name="symbol">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+        <option value="%">%</option>
+      </select>
+      <div>
+        <button name="calcu" type="submit">Try me!</button>
+      </div>
+    </form>
+  </div>
   <script>
-    function random_bg_color() {
-      var symbols, color;
-      symbols = "0123456789ABCDEF";
+    let inp = document.getElementById("valuecal");
+    let {
+      elements: { ftext, stext, symbol, calcu },
+    } = valuecal;
 
-      color = "#";
-      var i;
-      for (i = 0; i < 6; i++) {
-        color = color + symbols[Math.floor(Math.random() * 16)];
+    let correDiv = function (num2) {
+      if (num2 === 0) alert("it's over 9000!");
+    };
+
+    let correCalc = function (num1, num2) {
+      if (num1 < 0 || num2 < 0) alert("Error :(");
+      else if (isNaN(num1) || isNaN(num2)) {
+        alert("Error :(");
       }
-      document.body.style.background = color;
-    }
-    random_bg_color();
+    };
+
+    let calc = function (num1, num2, sym) {
+      correCalc(num1, num2);
+      switch (sym) {
+        case "+":
+          return num1 + num2;
+        case "-":
+          return num1 - num2;
+        case "*":
+          return num1 * num2;
+        case "/":
+          correDiv(num2);
+          return num1 / num2;
+        case "%":
+          correDiv(num2);
+          return num1 % num2;
+      }
+    };
+
+    let control = function (v) {
+      v.preventDefault();
+      let num1 = parseInt(ftext.value);
+      let num2 = parseInt(stext.value);
+      try {
+        let r = calc(num1, num2, symbol.value);
+        console.log(r);
+        alert(r);
+      } catch (error) {
+        console.log(error);
+        alert(error);
+      }
+    };
+    inp.addEventListener("submit", control);
   </script>
 </body>
 <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
