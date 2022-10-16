@@ -9,6 +9,17 @@
   <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
   <link rel="stylesheet" href="./public/css/bgjava.css">
   <title>Calculator</title>
+  <style>
+    .content {
+      width: fit-content;
+      margin: 0 auto;
+      margin-top: 50px;
+      background-color: antiquewhite;
+    }
+    body{
+      color: black;
+    }
+  </style>
 </head>
 
 <body>
@@ -54,7 +65,7 @@
       </div>
     </div>
   </nav>
-
+  <div class="content" style="border: 3px solid black; padding: 50px">
   <form id="valuecal">
     <div>
       <input type="text" name="ftext" />
@@ -73,6 +84,7 @@
       <button name="calcu" type="submit">Try me!</button>
     </div>
   </form>
+</div>
   <script>
     let inp = document.getElementById("valuecal");
     let {
