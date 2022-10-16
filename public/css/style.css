@@ -1,13 +1,3 @@
-/**
-* Template Name: MyResume - v4.8.0
-* Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
   color: #aecfef;
@@ -22,17 +12,6 @@ body {
   left: 0;
   z-index: -9998;
 }
-
-a {
-  color: #b27e0d;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #b27e0d;
-  text-decoration: none;
-}
-
 h1,
 h2,
 h3,
@@ -41,15 +20,6 @@ h5,
 h6 {
   font-family: "Raleway", sans-serif;
 }
-
-.container {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  margin-left: 15vw;
-  margin-right: 0px;
-}
-
 /*--------------------------------------------------------------
 # Disable aos animation delay on mobile devices
 --------------------------------------------------------------*/
@@ -62,20 +32,8 @@ h6 {
   flex-direction: row;
   width: 100%;
   height: 100%;
-  /* background: url("../img/home-bg.png") no-repeat;
-  background-size: cover; */
   position: relative;
 }
-
-/* #home:before {
-  content: "";
-  background: rgba(20, 121, 167, 0.8);
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-} */
 
 #home h1 {
   margin: 0;
@@ -92,12 +50,6 @@ h6 {
   font-family: "Poppins", sans-serif;
 }
 
-#home p span {
-  color: #b2310d;
-  font-weight: bold;
-  letter-spacing: 1px;
-}
-
 #home .social-links {
   margin-top: 30px;
   z-index: 9999;
@@ -111,178 +63,6 @@ h6 {
   margin-right: 20px;
   transition: 0.3s;
 }
-
-#home .social-links a:hover {
-  color: #b2310d;
-}
-
-.res1 {
-  align-items: center;
-  justify-content: center;
-  display: inline-flex;
-  text-align: center;
-  width: 150px;
-  height: 60px;
-  border-radius: 7px;
-  background-color: #e1ff00;
-  color: #45505b;
-  padding: 7px;
-  margin: 15px 40px;
-  font-size: 26px;
-  font-family: "Poppins", sans-serif;
-  box-shadow: #000000 5px 5px 5px;
-}
-
-.res2:hover,
-.res1:hover {
-  color: red;
-  background-color: #d8d4fe;
-}
-
-.res4:hover {
-  color: #00a503;
-  background-color: #d8d4fe;
-}
-
-.res1:hover {
-  color: #0678e3;
-  background-color: #d8d4fe;
-}
-
-.res3:hover {
-  color: darkgoldenrod;
-  background-color: #d8d4fe;
-}
-
-.res2 {
-  align-items: center;
-  justify-content: center;
-  display: inline-flex;
-  text-align: center;
-  width: 150px;
-  height: 60px;
-  border-radius: 7px;
-  background-color: #ffffff;
-  color: #45505b;
-  padding: 7px;
-  margin: 15px 40px;
-  margin-right: 20px;
-  font-size: 26px;
-  font-family: "Poppins", sans-serif;
-  box-shadow: #000000 5px 5px 5px;
-}
-
-.RESUME {
-  display: flex;
-  flex: 6;
-}
-
-.bkk42 {
-  max-width: 12vw;
-  height: 100%;
-  object-fit: contain;
-
-  padding-bottom: 5%;
-}
-
-@media (max-width: 992px) {
-  #home {
-    text-align: center;
-  }
-
-  /* 
-  #home h1 {
-    font-size: 32px;
-    line-height: 36px;
-  }
-
-  #home p {
-    margin-top: 10px;
-    font-size: 20px;
-    line-height: 24px;
-  } */
-  .container {
-    margin-left: 4vw;
-  }
-
-  .RESUME {
-    flex-direction: column;
-  }
-
-  .bkk42 {
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-}
-
-@media screen and (max-width: 768px) {
-  [data-aos-delay] {
-    transition-delay: 0 !important;
-  }
-
-  #home {
-    flex-direction: column;
-  }
-
-  .container {
-    margin: 0;
-    justify-content: center;
-    flex: 5;
-  }
-
-  .RESUME {
-    flex: 5;
-    flex-direction: column;
-  }
-
-  .res2 {
-    margin: 15px 40px;
-  }
-}
-
-@media (min-width: 992px) {
-  #home {
-    padding-left: 100px;
-  }
-
-  .RESUME {
-    position: relative;
-    right: 10%;
-  }
-}
-
-@media (min-width: 1461px) and (max-width: 1775px) {
-  #home {
-    padding-left: 10px;
-  }
-
-  .RESUME {
-    position: relative;
-    right: 8%;
-  }
-
-  .res2 {
-    margin-left: 20px;
-  }
-}
-
-@media (min-width: 995px) and (max-width: 1460px) {
-  #home {
-    padding-left: 10px;
-  }
-
-  .RESUME {
-    position: relative;
-    right: 4%;
-    flex-direction: column;
-  }
-
-  .res2 {
-    margin-left: 20px;
-  }
-}
-
 .menuBtn {
   margin-left: 45%;
   margin-right: 45%;
