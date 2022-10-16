@@ -192,7 +192,7 @@ function popup() {
       alert("Pwease don't huwt me Mr.tliangso UwU.");
     } else if (name === "thliangs") {
       alert("Pwease don't huwt me Mr.thliangs UwU.");
-    } else {
+    } else if (isNaN(name)) {
       alert("Hello! Mr." + name + " welcome to our webpage!");
     }
   } else {
