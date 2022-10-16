@@ -1,6 +1,7 @@
 body {
   font-family: "Open Sans", sans-serif;
-  color: #272829;
+  color: #ffffff;
+  background-color: #272829;
 }
 h2,
 h3,
@@ -20,7 +21,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #1d2b61;
+  background: #f1a3b0;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -62,7 +63,7 @@ h6 {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #1d2b61;
+  border: 6px solid #f1a3b0;
   border-top-color: #fff;
   border-bottom-color: #fff;
   border-radius: 50%;
@@ -140,7 +141,7 @@ section {
   width: 1px;
   height: 10px;
   transition: 0.9s;
-  background-color: #1d2b61;
+  background-color: #f1a3b0;
 }
 
 /*--------------------------------------------------------------
@@ -150,7 +151,7 @@ section {
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid #1d2b61;
+  border-left: 2px solid #f1a3b0;
   position: relative;
 }
 
@@ -160,13 +161,13 @@ section {
   font-weight: 600;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color: #1d2b61;
+  color: #f1a3b0;
   margin-bottom: 10px;
 }
 
 .resume .resume-item h5 {
   font-size: 16px;
-  background: #f7f8f9;
+  background: #000000;
   padding: 5px 15px;
   display: inline-block;
   font-weight: 600;
@@ -193,8 +194,8 @@ section {
   border-radius: 50px;
   left: -9px;
   top: 0px;
-  background: #fff;
-  border: 2px solid #1d2b61;
+  background: rgb(3, 3, 3);
+  border: 2px solid #f1a3b0;
 }
 
 /*--------------------------------------------------------------
@@ -202,12 +203,12 @@ section {
 --------------------------------------------------------------*/
 .contact .info {
   width: 100%;
-  background: #fff;
+  background: #272829;
 }
 
 .contact .info i {
   font-size: 20px;
-  color: #1d2b61;
+  color: #f1a3b0;
   float: left;
   width: 44px;
   height: 44px;
@@ -224,14 +225,14 @@ section {
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: #45505b;
+  color: white;
 }
 
 .contact .info p {
   padding: 0 0 0 60px;
   margin-bottom: 0;
   font-size: 14px;
-  color: #728394;
+  color: rgb(255, 248, 248);
 }
 
 .contact .info .email,
@@ -242,7 +243,7 @@ section {
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
-  background: #1d2b61;
+  background: #f1a3b0;
   color: #fff;
 }
 
@@ -268,7 +269,7 @@ section {
 
 #footer {
   background: #f7f8f9;
-  color: #45505b;
+  color: #000000;
   font-size: 14px;
   text-align: center;
   padding: 30px 0;
@@ -288,6 +289,7 @@ section {
   font-style: italic;
   padding: 0;
   margin: 0 0 40px 0;
+  color: rgb(3, 3, 3);
 }
 
 #footer .social-links {
@@ -297,7 +299,7 @@ section {
 #footer .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #1d2b61;
+  background: #f1a3b0;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
