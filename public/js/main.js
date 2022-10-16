@@ -263,7 +263,7 @@ const out = () => {
 function popup() {
   let name = prompt("Enter your intra username...");
   if (name === "tliangso") {
-    alert("Please don't hurt me tliangso");
+    alert("Pwease don't huwt me tliangso UwU");
   } else if (name != null) {
     alert("Hello! " + name + " welcome to our webpage!");
   }
