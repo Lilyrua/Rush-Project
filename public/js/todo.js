@@ -1,48 +1,49 @@
-function addnew() {
-  var data = prompt("YOUR LIST TO DO");
-  let id = Date.now();
-  if (data != "" && data != null) {
-    Listadd(data, id);
-    setcookie(id, data);
-  }
-}
-function Listadd(value, id = "Nill") {
-  var ft = document.getElementById("ft_list");
-  var sorce = document.createTextNode(value);
-  var div = document.createElement("div");
-  div.appendChild(sorce);
-  div.id = id;
-  if (value === "" && id === "None") alert("YOUR LIST TO DO");
-  else {
-    ft.prepend(div);
-  }
-  div.onclick = function () {
-    if (confirm("Are you sure to delete List : " + value)) {
-      deletelist(this.id);
-      this.remove();
+var myNodelist = document.getElementById("ft_list");
+function createToDo(txt) {
+  var node = document.createElement("div");
+  node.textContent = txt;
+  node.addEventListener("click", function () {
+    if (confirm("Are you sure you want to delete: " + txt)) {
+      myNodelist.removeChild(node);
+      st();
     }
-  };
+  });
+
+  return node;
 }
-function deletelist(cokkieid) {
-  var date = new Date();
-  date.setMonth(date.getYear() - 1);
-  document.cookie = cokkieid + "=; expires=Wed, 31 Oct 2012 08:50:17 UTC;";
+function popup() {
+  let task = prompt("Enter some task...");
+  if (task != null) {
+    const x = createToDo(task);
+    myNodelist.prepend(x);
+    st();
+  } else if (task == null) {
+    location.reload();
+  }
 }
 
-function setcookie(cokkieid, cookieva) {
-  document.cookie = cokkieid + "=" + cookieva;
-  var date = new Date();
-  date.setMonth(date.getYear() + 3000);
-  document.cookie += "; expires=" + date.toUTCString();
+function st() {
+  document.cookie =
+    "Tasks" +
+    "=" +
+    [...myNodelist.getElementsByTagName("div")]
+      .map(function (x) {
+        return encodeURIComponent(x.textContent);
+      })
+      .join();
 }
 
-function checklist() {
-  let data = document.cookie.split(";");
-  console.log(data);
-  if (!(data[0] == "" && data.length === 1)) {
-    for (let i = 0; i < data.length; i++) {
-      let cookiepath = data[i].split("=");
-      Listadd(cookiepath[1], cookiepath[0]);
-    }
-  }
+const { Tasks } = document.cookie.split(";").reduce(function (acc, pair) {
+  const [key, ...vals] = pair.split("=");
+  const val = vals.join("=");
+  acc[key] = decodeURIComponent(val);
+  return acc;
+}, {});
+
+if (Tasks) {
+  Tasks.split(",").forEach(function (task) {
+    const tx = decodeURIComponent(task);
+    const y = createToDo(tx);
+    myNodelist.append(y);
+  });
 }
