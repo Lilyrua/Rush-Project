@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,300&family=Oswald:wght@300&display=swap');
+body {
+    background-color: rgb(83, 78, 78);
+}
+.ALL {
+    display: block;
+}
+
+.Title {
+    width: 100%;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    color: rgb(255, 255, 255)
+    
+}
+
+.table {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.card {
+    width: 20%;
+    height: 70%;
+    min-height: 400px;
+    min-width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 183, 255, 0.2);
+}
+.container {
+    padding: 2px 16px;
+}
+
+img {
+    width:100%; 
+    display: flex; 
+    align-items: center; 
+    padding-top: 10px;
+    opacity: 0.5
+    
+
+}
+img:hover {
+    width:100%; 
+    display: flex; 
+    align-items: center; 
+    padding-top: 10px;
+    opacity: 100
+}
+
+td i {
+    font-size: 18px;
+    padding-bottom: 5px;
+    
+}
+
+td h2 {
+    font-size: 30px;
+    font-family: 'Kanit', sans-serif;
+    color: rgb(255, 255, 255)
+}
+
+td p {
+    font-size: 18px;
+    font-family: 'Kanit', sans-serif;
+    color: snow
+}

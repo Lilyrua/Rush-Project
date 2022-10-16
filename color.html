@@ -6,24 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./public/css/style.css" />
+  <link rel="stylesheet" href="./public/css/color.css">
   <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
   <title>ColorR</title>
-  <style>
-    body {
-      background: url(https://i.kym-cdn.com/photos/images/original/002/111/324/976.gif);
-      background-size: auto;
-    }
-
-    .Desc {
-      color: white;
-      margin-left: auto;
-      margin-right: auto;
-      width: 600px;
-      height: 850px;
-      text-align: center;
-      background-color: rgba(0, 0, 0, 0.781);
-    }
-  </style>
 </head>
 
 <body>
@@ -69,31 +54,29 @@
       </div>
     </div>
   </nav>
-  <div class="Desc">
-    <center>
-      <h1 id="content">Game Color</h1>
-      ---------------------------------------- <br /><button onclick="a()">
-        PLAY!!
-      </button>
+  <div class="ALL">
+    <div class="Title">
+        <h1 id="content">Game Color</h1>
+    <div class="card">
+      <button onclick="a()">CLICK ME TO PLAY!!</button>
       <h2>สีที่มีให้ทาย</h2>
-    </center>
-
-    <div class="Pic">
-      <img src="Color.jpg" width="410" height="424" />
-    </div>
-
-    <center>
-      <p>--------------------------------------------------------------</p>
-      <div class="des">
-        <h3 id="one"></h3>
-        <p id="answer"></p>
-        <h3 id="two"></h3>
-        <p id="round"></p>
-      </div>
-      <script src="./public/js/color.js"></script>
-    </center>
+        <img src=" Color.jpg" alt="Avatar">
+        <div class="container">
+          <table class="table">
+             <tr>
+                 <td>
+                  <h2 id="one"></h2>
+                  <h2 id="answer"></h2>
+                  <h2 id="two"></h2>
+                  <h2 id="round"></h2>
+                 </td>
+             </tr>
+          </table>
+         </div>
   </div>
 </body>
 <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+<script src="./public/js/color.js"></script>
 
 </html>
+
