@@ -262,8 +262,8 @@ const out = () => {
 
 function popup() {
   let name = prompt("Enter your intra username...");
-  let long = name.length;
   if (name != null) {
+    let long = name.length;
     if (long > 8 || long < 8) {
       alert("Please enter valid intra name, thank you!");
       location.reload();
