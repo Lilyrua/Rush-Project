@@ -2,5 +2,5 @@
 
 Rush 42 BKK 
 Member 
-Pakorn pakornds
-Tus Suksamran Lilyrua
+1. Pakorn pakornds
+2. Tus Suksamran Lilyrua
